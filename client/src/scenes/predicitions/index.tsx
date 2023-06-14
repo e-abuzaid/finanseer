@@ -2,7 +2,7 @@ import DashboardBox from "@/components/DashboardBox";
 import FlexBetween from "@/components/FlexBetween";
 import { useGetKpisQuery } from "@/state/api";
 import { useTheme, Box, Typography, Button } from "@mui/material";
-import { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import regression, { DataPoint } from "regression";
 import {
   CartesianGrid,
