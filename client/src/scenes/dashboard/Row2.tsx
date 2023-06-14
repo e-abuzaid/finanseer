@@ -21,8 +21,8 @@ import {
 import FlexBetween from "@/components/FlexBetween";
 
 const pieData = [
-  { namme: "Group A", value: 600 },
-  { namme: "Group B", value: 400 },
+  { name: "Group A", value: 600 },
+  { name: "Group B", value: 400 },
 ];
 
 const Row2 = () => {
@@ -130,7 +130,7 @@ const Row2 = () => {
               paddingAngle={2}
               dataKey="value"
             >
-              {pieData.map((index) => (
+              {pieData.map((_entry, index) => (
                 <Cell key={`cell-${index}`} fill={pieColors[index]} />
               ))}
             </Pie>
